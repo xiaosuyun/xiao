@@ -39,7 +39,7 @@
                 </el-menu-item-group>
             </el-submenu>
 
-            <el-menu-item index="/">
+            <el-menu-item index="/aaa">
                 <span slot="title">导航四</span>
             </el-menu-item>
 

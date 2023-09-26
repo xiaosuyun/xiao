@@ -31,7 +31,7 @@ export default {
 }
 </script>
   
-<style>
+<style scoped>
 .layout {
     display: flex;
 }
@@ -46,7 +46,7 @@ export default {
 }
 
 .layout .content {
-    /* flex: 1; */
+    flex: 1;
     padding-left: 200px;
 }
 
