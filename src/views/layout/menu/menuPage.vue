@@ -3,7 +3,7 @@
         <el-menu :default-active="$route.path" class="el-menu-vertical-demo" background-color="#112f50" text-color="#fff"
             active-text-color="#ffd04b" router :collapse="isCollapse">
             <el-menu-item>
-                <span slot="title">首客生鲜采购管理系统</span>
+                <span slot="title">采购管理系统</span>
             </el-menu-item>
 
             <el-menu-item index="/">
@@ -39,8 +39,8 @@
                 </el-menu-item-group>
             </el-submenu>
 
-            <el-menu-item index="/aaa">
-                <span slot="title">导航四</span>
+            <el-menu-item index="/aaagit reflog">
+                <span slot="title">系统管理</span>
             </el-menu-item>
 
         </el-menu>
