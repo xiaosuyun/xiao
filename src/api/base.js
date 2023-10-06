@@ -4,6 +4,7 @@ const base = {
     sales: '/api/home/sales',
     order: '/api/home/order',
     format: '/api/home/format',
+    projectList: '/api/goods/productList?id=',
 };
 
 export const host = 'xxx';

@@ -18,6 +18,10 @@ const api = {
     // 饼图
     formatInfo() {
         return axios.get(base.format);
+    },
+    projectList(id) {
+        if (id == undefined) id = 1;
+        return axios.get(base.projectList + id);
     }
 };
 

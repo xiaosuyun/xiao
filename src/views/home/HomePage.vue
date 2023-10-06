@@ -90,7 +90,7 @@
                     <el-row>
                         <el-col :span="8">
                             <div>
-                                <el-button type="primary" size="small">产品管理</el-button>
+                                <el-button type="primary" size="small"><a href="/product/list">产品管理</a></el-button>
                             </div>
                         </el-col>
                         <el-col :span="8">
@@ -132,7 +132,7 @@ export default {
         async totalInfo() {
             let res = await this.$api.totalInfo();
             this.test = res.data[0];
-            console.log(res.data);
+            // console.log(res.data);
         },
         // 月销售额
         async salesInfo() {
@@ -145,7 +145,7 @@ export default {
                 yarr2.push(ele.clothingsale);
             });
             this.line(arrx, yarr1, yarr2);
-            console.log(res.data);
+            // console.log(res.data);
         },
         // 饼图
         async formatInfo() {
@@ -162,13 +162,13 @@ export default {
                 pieData.push(obj);
             })
             this.pie(pieData);
-            console.log(res.data);
+            // console.log(res.data);
         },
         // 今日订单
         async orderInfo() {
             let res = await this.$api.orderInfo();
             this.orderData = res.data[0];
-            console.log(res.data);
+            // console.log(res.data);
         },
         // 柱形图
         line(arrx, yarr1, yarr2) {
