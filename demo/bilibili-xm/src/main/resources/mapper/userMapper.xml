@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bilibili.xm.mapper.UserMapper">
+    <select id="findAllUser" resultType="MyTest">
+        select * from mytest ;
+    </select>
+
+    <select id="findAllSales" resultType="Sales">
+        select * from sales ;
+    </select>
+
+    <select id="findAllOrder" resultType="Order">
+        select * from orders ;
+    </select>
+
+    <select id="findAllFormat" resultType="Format">
+        select * from format ;
+    </select>
+
+    <select id="findProjectList" parameterType="int" resultType="ProjectList">
+        select * from projectlist order by id limit 4 offset #{id} ;
+    </select>
+
+    <select id="findSearchProjectTitle" resultType="ProjectList">
+        select * from projectlist where concat(`title`,`descs`) like concat('%',#{search},'%');
+    </select>
+
+    <delete id="deleteProjectById">
+        delete from projectlist where id=#{id}
+    </delete>
+
+</mapper>

@@ -21,7 +21,25 @@ const api = {
     },
     projectList(id) {
         if (id == undefined) id = 1;
-        return axios.get(base.projectList + id);
+        return axios.get(base.projectList,{
+            params: {
+                id,
+            }
+        });
+    },
+    search(search) {
+        return axios.get(base.search,{
+            params: {
+                search,
+            }
+        })
+    },
+    deleteItemById(id) {
+        return axios.get(base.search,{
+            params: {
+                id,
+            }
+        })
     }
 };
 
